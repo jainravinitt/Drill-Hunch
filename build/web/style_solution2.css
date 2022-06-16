@@ -1,0 +1,37 @@
+/*#hideDiv{background:red; width:400px; margin:0 auto; color:#fff; padding:10px; text-align:center;}*/
+
+html, body, .container2 {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    z-index:-1;
+}
+.container2 {
+    overflow:hidden;
+    position:relative;
+    z-index:-1;
+    display:none;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 5s forwards; 
+    width:400px; margin:0 auto; color:#fff; padding:10px; text-align:center;
+    background:red;
+    animation: cssAnimation 3s forwards;
+}
+#hideMe1 {
+    -webkit-animation: cssAnimation 5s forwards; 
+    width:400px; margin:0 auto; color:#fff; padding:10px; text-align:center;
+    background:green;
+    animation: cssAnimation 1s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}

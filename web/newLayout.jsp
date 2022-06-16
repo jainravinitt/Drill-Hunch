@@ -73,8 +73,7 @@
     } catch (Exception e) {
         out.println("ERROR IN ABOfakj" + score);
     }
-    
-     if(session.getAttribute("message")=="wrong" ||
+    if(session.getAttribute("message")=="wrong" ||
               session.getAttribute("message")=="correct"){
      }else{ 
          session.setAttribute("message", "none");
@@ -95,16 +94,18 @@
         
     </head>
     <body><div id="rc_logo">
-            <a href="#home" title="Logo">SMASH&LEAP</a> <!-- Swap this placeholder out for your logo image -->
+            <a href="#" title="Logo">LOGO_GAME</a>    <!-- Have to put Logo -->
         </div>  
+<!--           <img src="image/version20.png" class="versionLogo" alt="Version20_logo"/>-->
+        <a href="#" class="versionLogo" image="image/version.png" >LOGO_Version'20 </a>    <!--- Have to put Logo -->
         <div class="rc_nav" id="centered_nav">
             <a href="#rules" title="rules">Rules</a>
             <a href="#leaderboard" title="leaderboard">LeaderBoard</a>
             <a href="#contact" title="conatctus">Contact US</a>
         <a href="logout.jsp" title="logout" style="font-size: 26px;"><i class="fa  fa-sign-out" aria-hidden="true"></i></a>
-            
             <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>  
+         </div>  
+          
             <jsp:include page="popup.jsp"/>
         <% if( session.getAttribute("message")=="none") {
          %><div id="check_case" style="height: 50px;"> </div>
@@ -139,7 +140,9 @@
             <%--
                 <jsp:include page="footer.jsp"/>
             --%>
-            <div id="score_board"style="position:fixed ; right: 0; bottom:0; background-color:tomato ; padding:20px;"  ><h1 style="font-size:26px; margin:0; color:white; " >Points:     <%=score%></h1></div>
+<div class="score_board" >
+    <h1 >Points:<%=score%></h1>
+</div>
     </body>
 </html>
 <script type='text/javascript'>
@@ -151,12 +154,8 @@
             x.className = "rc_nav";
         }
     }
-
 function keyPressed(){
 var key = event.keyCode || event.charCode || event.which ;
 return key;
 }
-
-
-
 </script>

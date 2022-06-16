@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>guru_login</servlet-name>
-        <servlet-class>guru_login</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>controller</servlet-name>
         <servlet-class>controller</servlet-class>
     </servlet>
@@ -13,8 +9,8 @@
         <servlet-class>RegistrationController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>guru_login</servlet-name>
-        <url-pattern>/guru_login</url-pattern>
+        <servlet-name>Team_login</servlet-name>
+        <url-pattern>/Team_login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>controller</servlet-name>
@@ -30,6 +26,6 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>checking.jsp</welcome-file>
+        <welcome-file>newLayout.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

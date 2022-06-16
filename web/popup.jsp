@@ -92,7 +92,7 @@
    }   
 %>
 <!DOCTYPE html>
-<link rel="stylesheet" href="style_popup1.css">
+<link rel="stylesheet" href="style_popupw.css">
 <!-- Overlay -->
 <div class="overlay" id="overlay"></div>
 <h1  class="s3-btn" name="Open" onclick="popupOpen();"  > HINTS</h1>
